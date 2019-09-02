@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Mark's Portfolio.</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/portfolio_singlepage.css">
+	</head>
+	<body>
+
+        <!--Navbar-->
+        <div class="navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#3D_Animation">3D Animation</a>
+            <a href="#Github">Github</a>
+            <a href="#Resume">Resume</a>
+            <a onclick="openForm()">Contact</a>
+        </div>
+        <!--End of Navbar-->
+
+        <!--Home-->
+        <div id="Home">
+            <br>
+            <img src="" alt="">
+        </div>
+        <!--End of Home-->
+
+        <!--About Me Synopsis-->
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        <div class="Row">
+            <div class="synopsis_column_1"> <!--Right Column-->
+                <div class="profile_image">
+                    <img src="Images/ProfilePictureMedium.jpg" alt="profile picture" style="width:550px;height:550px;">
+                </div>
+            </div>
+
+            <div class="synopsis_column_2"> <!--Left Column-->
+                <!--Slideshow Container-->
+                <div class="slideshow-container">
+
+                    <!--Slides-->
+                    <div class="Slides fade">
+                        <div class="synopsis_text">
+                            <h2> Who am I?</h2>
+                            <p>I am Mark Roenfeldt, a 3D Animator and student of software development at <a href="https://www.learncodinganywhere.com/">The Tech Academy.</a>
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................
+                            .........................................................................................................................</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Slides fade">
+                    <div class="synopsis_text">
+                            <h2>My Animation & Video projects</h2>
+                            <p>Click here to check out my animation and video work.</p>
+                        <div>
+                            <a href="https://vimeo.com/markmadness" target="_blank"><img src="./Images/vimeo_logo.jpg" alt=""></a>
+                            <!--<img src="./Images/What I Do Scene Shot.jpg" style="width:727px;height:400px;border:2px solid black;border-radius:5px;"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Slides fade">
+                    <div class="synopsis_text">
+                        <h2>My Coding Skills</h2>
+                        <img src="./Images/html-css-javascript.jpg" style="width:700px;height:400px;" alt="html-css-javascript">
+                    </div>
+                </div>
+
+                <!--Next and Prev buttons-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            
+            <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+
+        </div>
+        <!--End of About Me Synopsis-->
+
+        <!--Demo Reel-->
+        <div class="demoreel" id="3D_Animation">
+            <br>
+            <br>
+            <center><h1> Here is my Animation demo reel.</h1></center>
+            <div class="demoreel_video">
+                <center>
+                    <video width="1080" height="607" controls>
+                        <source src="./Video/Mark Roenfeldt Demo Reel.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                    </video>
+
+                    <!-- 
+                    <iframe width="1280" height="720"
+                        src="https://vimeo.com/manage/238208119/">
+                    </iframe>> 
+                    -->
+                    
+                </center>
+            </div>
+        </div>
+        <!--End of Demo Reel-->
+
+        <!--Github-->
+        <div class="github" id="Github">
+            <br>
+            <div class="github-text">
+                <h1>Feel free to check out my projects on my GitHub page!</h1>
+                <div class="github-img">
+                    <a href="https://github.com/MarkMadness" target="_blank"> <img src="./Images/GitHub_Logo.png" alt="My GitHub" style="width:854px; height:350px; border:2px solid black;"></a>
+                </div>
+            </div>
+        </div>
+        <!--End of Github-->
+
+        <!--Resume-->
+        <div class="resume" id="Resume">
+            <br>
+            <div class="resume-header">
+                <h1>My Resume</h1>
+            </div>
+            <div class="resume-body">
+                <section>
+                    <div class="resume-subheader">
+                        <h2>Key Qualifications</h2>
+                    </div>
+                    <div class="resume-text">
+                        <p><u>3D Animator:</u> Creative, inventive, and detailed. Strong understanding of the principles of Animation. Works with biped and quadruped characters. Passion for creating quality animations.</p>
+                        <p><u>Rigging:</u> Able to create skeletons for characters, paint skin weights, and set up controls.</p>
+                        <p><u>Software Developer:</u> Able to use HTML5, CSS3, and Small Basic to create websites and software in colaboration with GitHub.</p>
+                        <p><u>Work Ethic:</u> Highly responsible, dependable, self-motivated, and positive attitude. Works well independently and in teams. Always seeking to improve skills. Handles feedback and direction well.</p>
+                        <p><u>Project Management:</u> Collaborative, communicative, and organized. Works well during crunch times. Meets team deadlines.</p>
+                    </div>
+                </section>
+                <br>
+                <section>
+                    <div class="resume-subheader">
+                        <h2>Software Experience</h2>
+                    </div>
+                    <div class="resume-text">
+                        <p><u>Visual Studio Code</u> - Create code for websites and software</p>
+                        <p><u>Maya</u> – Proficient in animation. Basic skills in modeling, texturing, and rigging</p>
+                        <p><u>Unity & Unreal Engine</u> – Implement animation assets in the engine’s art pipeline</p>
+                        <p><u>Pixologic Zbrush</u> – Sculpting high-resolution Props and Characters</p>
+                        <p><u>Photoshop</u> – Diffuse, Specular, and Normal maps for game models. Maps for D&D campaign</p>
+                        <p><u>After Effects & Premiere</u> – Video Editing, Composition, and Motion Graphics</p>
+                    </div>
+                </section>
+                <br>
+                <section>
+                    <div class="resume-subheader">
+                        <h2>Job Experience</h2>
+                    </div>
+                    <div class="resume-text">
+                        <p><u>Tesseract Interactive - Junior Animator</u></p>
+                        <ul><i>February 2019 - Present</i></ul>
+                        <p><u>Whitethorn Digital - Animator</u></p>
+                        <ul><i>April 2018 - May 2018</i></ul>
+                        <p><u>Druid Gameworks Studio LLC - Animator</u></p>
+                        <ul><i>September 2016 – October 2017</i></ul>
+                        <p><u>Starboard Games LLC - Animation Lead</u></p>
+                        <ul><i>September 2015 – October 2016</i></ul>
+                        <p><u>Full Sail University - Game Animation Intern</u></p>
+                        <ul><i>April 2015 – October 2015</i></ul>
+                </section>
+                <br>
+                <section>
+                    <div class="resume-subheader">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="resume-text">
+                        <p><u>The Tech Academy</u> – Software Development Course</p>
+                        <p><u>iAnimate.net</u> – Games, Creature, and Feature Film Workshops</p>
+                        <p><u>Full Sail University</u> – Bachelor Degree in Game Art. Salutatorian</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--End of Resume-->
+
+        <!--Contact-->
+        <div class="contact-section">
+            <button class="open-button" onclick="openForm()">Contact</button>
+        </div>
+
+        <div class="contact" id="Contact">
+            
+            <h1>Contact</h1>
+            <h2>Feel free to reach out to me!</h2>
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="post" class="form-container">
+                <label>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" placeholder="Enter your name here" name="name" required>
+                <label>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" placeholder="Enter your email here" name="email" required>
+                <label>Message:</label>
+                    <input type="text" placeholder="Write your message here" maxlength="1000px;" height="30px;" name="message" required>
+                    
+                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn-cancel" onclick="closeForm()">Close</button>
+
+            </form>
+        </div>
+
+        <br>
+        <!--End of Contact-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mark Roenfeldt 2019
+            </p>
+            <br>
+        </footer>
+        <!--End of Footer-->
+
+        <!--JavaScript Link-->
+        <script src="./js/portfolio_singlepage.js"></script>
+        <!--End of JavaScript Link-->
+
+	</body>
+</html>

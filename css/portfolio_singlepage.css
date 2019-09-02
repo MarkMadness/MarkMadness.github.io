@@ -1,0 +1,331 @@
+/*===========================================================================
+        Home Section
+=============================================================================*/
+
+body {
+    margin: 0%;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    border: 1px solid black;
+    }
+
+.navbar a {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*===========================================================================
+        End of Home Section
+=============================================================================*/
+
+/*===========================================================================
+        About Me Section
+=============================================================================*/
+
+.header {
+    background-color: gray;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.Row{
+    margin-bottom: 5px;
+    display: block;
+    height: 550px;
+}
+
+.synopsis_column_1 {
+    float: left;
+    width: 50%;
+    background-color: lightgray;
+    height: 550px;
+    border-bottom: 3px solid black;
+}
+
+.synopsis_column_2 {
+    float: left;
+    width: 50%;
+    background-color: gray;
+    height: 550px;
+    border-bottom: 3px solid black;
+}
+
+.synopsis_text{
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.profile_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*=====SlidesShow=====*/
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    height: 550px;
+    float: left;
+}
+
+.Slides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: black;
+    opacity: .6;
+    border-radius: 5px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/*===========================================================================
+        End of About Me Section
+=============================================================================*/
+
+/*===========================================================================
+        3D Animation Section
+=============================================================================*/
+
+.demoreel {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+video {
+    box-shadow: 10px 10px 20px gray;
+}
+
+/*===========================================================================
+        End of 3D Animation Section
+=============================================================================*/
+
+/*===========================================================================
+        Github Section
+=============================================================================*/
+
+.github {
+    background-color: gray;
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 3px solid black;
+}
+
+.github-text {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.github-img:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: .7s;
+}
+
+/*===========================================================================
+        End of Github Section
+=============================================================================*/
+
+/*===========================================================================
+        Resume Section
+=============================================================================*/
+
+.resume {
+    background-color: lightgray;
+    height: 1900px;
+    width: 100%;
+    font-size: large;
+    padding-top: 15px;
+    border-bottom: 3px solid black;
+}
+
+.resume-body {
+    margin-left: 50px;
+}
+
+.resume-header {
+    text-align: center;
+    text-decoration: bold;
+}
+
+.resume-subheader {
+    font-size: 18pt;
+}
+
+.resume-text {
+    font-size: 18pt;
+    padding-left: 20px;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+/*===========================================================================
+        End of Resume Section
+=============================================================================*/
+
+/*===========================================================================
+        Contact Section
+=============================================================================*/
+
+.open-button {
+    border: 3px solid black;
+    padding:5px;
+    font: Arial;
+    margin: 20px;
+    font-size: 24pt;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+}
+
+.contact-section {
+    margin: 40px;
+    content: "";
+}
+
+.contact {
+    border: 3px solid #5A5A5A;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    bottom: 100px;
+    right: 150px;
+    z-index: 9;
+    background-color: #9B9B9B;
+    padding: 15px;
+}
+
+.form-container {
+    background-color: #C3C3C3;
+    border-radius: 5px; 
+    padding: 20px;
+}
+
+.form-container .btn {
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 18pt;
+    padding : 8px;
+    color: white;
+    font: Arial;
+}
+
+.form-container .btn-cancel {
+    background-color: red;
+    border-radius: 5px;
+    font-size: 18pt;
+    padding : 8px;
+    color: white;
+    font: Arial;
+}
+
+label {
+    font-size: x-large;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*===========================================================================
+        End of Contact Section
+=============================================================================*/
+
+/*===========================================================================
+        Footer Section
+=============================================================================*/
+
+.footer {
+    border-top: 3px solid black;
+}
+
+/*===========================================================================
+        End of Footer Section
+=============================================================================*/
