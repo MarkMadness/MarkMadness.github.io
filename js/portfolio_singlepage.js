@@ -1,10 +1,10 @@
-function openForm() {
-    document.getElementById("Contact").style.display = "block";
-}
+// function openForm() {
+//     document.getElementById("Contact").style.display = "block";
+// }
 
-function closeForm() {
-    document.getElementById("Contact").style.display = "none";
-}
+// function closeForm() {
+//     document.getElementById("Contact").style.display = "none";
+// }
 
 //SlideShow
 var slideIndex = 1;

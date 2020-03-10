@@ -4,6 +4,7 @@
 
 body {
     margin: 0%;
+    background-color: lightgray;
 }
 
 .navbar{
@@ -54,59 +55,60 @@ html {
     margin-bottom: 5px;
     display: block;
     height: 600px;
+    background-color: gray;
+    border-bottom: 3px solid black;
 }
 
 .synopsis_column_1 {
     float: left;
-    width: 50%;
+    width: 600px;
     background-color: lightgray;
     height: 100%;
     border-bottom: 3px solid black;
-}
-
-.synopsis_column_2 {
-    float: left;
-    width: 50%;
-    background-color: gray;
-    height: 100%;
-    border-bottom: 3px solid black;
-}
-
-.synopsis_text{
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-
-.bio_text{
-    font-size: 18px;
-    padding-left: 45px;
-    padding-right: 45px;
-}
-
-.header_text{
-    text-align: center;
 }
 
 .profile_image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     height: 100%;
 }
 
-/*=====SlidesShow=====*/
-.slideshow-container {
-    position: relative;
-    margin: auto;
-    height: 0px;
+.synopsis_column_2 {
     float: left;
+    min-width: 600px;
+    max-width: 1320px;
+    background-color: gray;
+    height: 100%;
+    border-bottom: 3px solid black;
+}
+
+.slideshow-container {
+    
+    height: 0px;
+    /* float: left; */
 }
 
 .Slides {
     display: none;
 }
+
+.synopsis_text{
+    text-align: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px;
+}
+
+.bio_text{
+    position: absolute;
+    font-size: 18px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+/*=====SlidesShow=====*/
 
 .prev, .next {
     cursor: pointer;
@@ -165,33 +167,13 @@ html {
 =============================================================================*/
 
 /*===========================================================================
-        3D Animation Section
-=============================================================================*/
-
-.demoreel {
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 80px;
-}
-
-video {
-    box-shadow: 10px 10px 20px gray;
-}
-
-/*===========================================================================
-        End of 3D Animation Section
-=============================================================================*/
-
-/*===========================================================================
         Github Section
 =============================================================================*/
 
 .github {
-    background-color: gray;
     height: 500px;
     width: 100%;
     margin-top: 10px;
-    border-bottom: 3px solid black;
 }
 
 .github-text {
@@ -208,6 +190,28 @@ video {
 
 /*===========================================================================
         End of Github Section
+=============================================================================*/
+
+/*===========================================================================
+        3D Animation Section
+=============================================================================*/
+
+.demoreel {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    
+}
+
+/* video {
+    box-shadow: 10px 10px 20px gray;
+} */
+
+/*===========================================================================
+        End of 3D Animation Section
 =============================================================================*/
 
 /*===========================================================================
@@ -253,6 +257,10 @@ video {
         Contact Section
 =============================================================================*/
 
+.contact{
+    margin: 40px;
+}
+
 .open-button {
     border: 3px solid black;
     padding:5px;
@@ -265,12 +273,12 @@ video {
     color: black;
 }
 
-.contact-section {
+/* .contact-section {
     margin: 40px;
     content: "";
 }
 
-.contact {
+.contactForm {
     border: 3px solid #5A5A5A;
     border-radius: 10px;
     position: fixed;
@@ -323,7 +331,7 @@ input[type=submit] {
     border-radius: 3px;
     padding: 5px;
     cursor: pointer;
-}
+} */
 
 /*===========================================================================
         End of Contact Section
