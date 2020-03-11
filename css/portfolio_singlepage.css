@@ -9,13 +9,12 @@ body {
 
 .navbar{
     overflow: hidden;
-    background-color: black;
+    background-color: #0079C4;
     width: 100%;
     top: 0;
     z-index: 1;
-    position: fixed;
-    border: 1px solid black;
-    }
+    position: fixed;    
+}
 
 .navbar a {
     float: left;
@@ -29,7 +28,7 @@ body {
 
 .navbar a:hover {
     background-color: white;
-    color: black;
+    color: #4EBBFF;
     font-weight: bold;
 }
 
@@ -46,29 +45,27 @@ html {
 =============================================================================*/
 
 .header {
-    background-color: gray;
+    background-color: lightgray;
     text-align: center;
-    border: 3px solid black;
+    border-bottom: 10px solid #4EBBFF;
 }
 
 .Row{
-    margin-bottom: 5px;
     display: block;
     height: 600px;
-    background-color: gray;
-    border-bottom: 3px solid black;
+    border-bottom: 10x solid #4EBBFF;
 }
 
 .synopsis_column_1 {
     float: left;
-    width: 600px;
-    background-color: lightgray;
+    background-color: #4EBBFF;
     height: 100%;
-    border-bottom: 3px solid black;
+    width: 50%;
 }
 
 .profile_image {
     display: block;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -76,11 +73,9 @@ html {
 
 .synopsis_column_2 {
     float: left;
-    min-width: 600px;
-    max-width: 1320px;
-    background-color: gray;
+    background-color: lightgray;
     height: 100%;
-    border-bottom: 3px solid black;
+    width: 50%;
 }
 
 .slideshow-container {
@@ -142,7 +137,7 @@ html {
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #4EBBFF;
 }
 
 .fade {
@@ -173,7 +168,7 @@ html {
 .github {
     height: 500px;
     width: 100%;
-    margin-top: 10px;
+    border-top: 10px solid #4EBBFF;
 }
 
 .github-text {
@@ -200,15 +195,15 @@ html {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: gray;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
+    border-bottom: 10px solid #4EBBFF;
+    border-top: 10px solid #4EBBFF;
     
 }
 
-/* video {
-    box-shadow: 10px 10px 20px gray;
-} */
+video {
+    margin: 20px;
+    /* box-shadow: 10px 10px 20px gray; */
+} 
 
 /*===========================================================================
         End of 3D Animation Section
@@ -219,12 +214,12 @@ html {
 =============================================================================*/
 
 .resume {
-    background-color: lightgray;
+    /* background-color: #4EBBFF; */
     height: 2000px;
     width: 100%;
     font-size: large;
     padding-top: 15px;
-    border-bottom: 3px solid black;
+    border-bottom: 10px solid #4EBBFF;
 }
 
 .resume-body {
@@ -258,10 +253,11 @@ html {
 =============================================================================*/
 
 .contact{
+    font-size: 18pt;
     margin: 40px;
 }
 
-.open-button {
+/* .open-button {
     border: 3px solid black;
     padding:5px;
     font: Arial;
@@ -269,11 +265,11 @@ html {
     font-size: 24pt;
     border-radius: 7px;
     cursor: pointer;
-    background-color: gray;
+    background-color: lightgray;
     color: black;
 }
 
-/* .contact-section {
+.contact-section {
     margin: 40px;
     content: "";
 }
@@ -342,7 +338,9 @@ input[type=submit] {
 =============================================================================*/
 
 .footer {
-    border-top: 3px solid black;
+    font-size: large;
+    padding: 10px;
+    background-color: #4EBBFF;
 }
 
 /*===========================================================================
