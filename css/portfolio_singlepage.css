@@ -1,26 +1,36 @@
 /*===========================================================================
         Home Section
 =============================================================================*/
+:root{ /* Text palette */
+    --header-text: Verdana;
+    --body-text: sans-serif;
+}
 
 body {
     margin: 0%;
     background-color: lightgray;
+    font-family: var(--body-text);
 }
 
-.navbar{
+.header {
+    font-family: var(--header-text);
+}
+
+.navbar {
     overflow: hidden;
     background-color: #0079C4;
     width: 100%;
     top: 0;
     z-index: 1;
-    position: fixed;    
+    position: fixed;
+    font-family: var(--header-text);
 }
 
 .navbar a {
     float: left;
     display: block;
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 20pt;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -42,6 +52,7 @@ html {
     padding: 10px;
     border-radius: 3px;
     margin: 10px;
+    font-family: var(--header-text);
 }
 
 .link:hover {
@@ -56,10 +67,11 @@ html {
         About Me Section
 =============================================================================*/
 
-.header {
+.mainHeader {
     background-color: lightgray;
     text-align: center;
     border-bottom: 10px solid #4EBBFF;
+    font-family: var(--header-text);
 }
 
 .Row{
@@ -186,7 +198,7 @@ html {
 
 .github-text {
     text-align: center;
-    font-size: 18px;
+    font-size: 15pt;
     padding: 15px;
 }
 
@@ -210,7 +222,8 @@ html {
     margin-bottom: 10px;
     border-bottom: 10px solid #4EBBFF;
     border-top: 10px solid #4EBBFF;
-    
+    font-size: 15pt;
+    text-align: center;
 }
 
 video {
@@ -228,9 +241,9 @@ video {
 
 .resume {
     /* background-color: #4EBBFF; */
-    height: 1350px;
+    height: 1400px;
     width: 100%;
-    font-size: large;
+    font-size: 12pt;
     padding-top: 15px;
     border-bottom: 10px solid #4EBBFF;
 }
@@ -242,6 +255,7 @@ video {
 .resume-header {
     text-align: center;
     text-decoration: bold;
+    font-size: 15pt;
 }
 
 .resume-subheader {
@@ -266,7 +280,7 @@ video {
 =============================================================================*/
 
 .contact{
-    font-size: 18pt;
+    font-size: 15pt;
     margin: 40px;
 }
 
