@@ -1,14 +1,18 @@
 /*===========================================================================
         Home Section
 =============================================================================*/
-:root{ /* Text palette */
+:root { /* Text palette */
     --header-text: Verdana;
     --body-text: sans-serif;
+    --bg-color: E9E9E9;
+    --blue-color: #4EBBFF;
+    --blue-highlight-color: #7BCCFF;
+    --darker-blue-color: #0079C4;
 }
 
 body {
     margin: 0%;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     font-family: var(--body-text);
 }
 
@@ -18,7 +22,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #0079C4;
+    background-color: var(--darker-blue-color);
     width: 100%;
     top: 0;
     z-index: 1;
@@ -38,7 +42,7 @@ body {
 
 .navbar a:hover {
     background-color: white;
-    color: #4EBBFF;
+    color: var(--blue-color);
     font-weight: bold;
 }
 
@@ -47,7 +51,7 @@ html {
 }
 
 .link {
-    background-color: #0079C4;
+    background-color: var(--darker-blue-color);
     color: white;
     padding: 10px;
     border-radius: 3px;
@@ -56,7 +60,7 @@ html {
 }
 
 .link:hover {
-    background-color: #4EBBFF;
+    background-color: var(--blue-color);
 }
 
 /*===========================================================================
@@ -67,22 +71,23 @@ html {
         About Me Section
 =============================================================================*/
 
-.mainHeader {
-    background-color: lightgray;
+/*.mainHeader {
+    background-color: var(--bg-color);
     text-align: center;
-    border-bottom: 10px solid #4EBBFF;
+    border-bottom: 10px solid var(--blue-color);
     font-family: var(--header-text);
-}
+}*/
 
-.Row{
+.Row {
     display: block;
     height: 600px;
-    border-bottom: 10x solid #4EBBFF;
+    border-top: 10px solid var(--blue-color);
+    margin-top: 16px;
 }
 
 .synopsis_column_1 {
     float: left;
-    background-color: #4EBBFF;
+    background-color: var(--blue-color);
     height: 100%;
     width: 50%;
 }
@@ -98,20 +103,19 @@ html {
 
 .synopsis_column_2 {
     float: left;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     height: 100%;
     width: 50%;
 }
 
 .slideshow-container {
-    
     height: 0px;
     /* float: left; */
 }
 
-.Slides {
+/*.Slides {
     display: none;
-}
+}*/
 
 .synopsis_text{
     text-align: center;
@@ -123,14 +127,14 @@ html {
 
 .bio_text{
     position: absolute;
-    font-size: 18px;
+    font-size: 16pt;
     padding-left: 45px;
     padding-right: 45px;
 }
 
 /*=====SlidesShow=====*/
 
-.prev, .next {
+/*.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -162,7 +166,7 @@ html {
 }
 
 .active, .dot:hover {
-    background-color: #4EBBFF;
+    background-color: var(--blue-color);
 }
 
 .fade {
@@ -180,32 +184,93 @@ html {
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-  }
+  }*/
 
 /*===========================================================================
         End of About Me Section
 =============================================================================*/
 
 /*===========================================================================
-        Github Section
+        Content Section
 =============================================================================*/
 
-.github {
-    height: 500px;
+.content {
+    height: 420px;
     width: 100%;
-    border-top: 10px solid #4EBBFF;
+    border-top: 10px solid var(--blue-color);
+    border-bottom: 10px solid var(--blue-color);
 }
 
-.github-text {
+.content-text {
     text-align: center;
     font-size: 15pt;
-    padding: 15px;
 }
 
-.github-img:hover {
-    overflow: hidden;
+.content-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.boxOne{
+    grid-column: 1;
+    opacity: 0;
+}
+
+.boxTwo {
+    grid-column: 2;
+    width: 400px;
+}
+
+.boxThree {
+    grid-column: 3;
+    background-color: var(--blue-color);
+    color: white;
+    width: 500px;
+    font-family: var(--header-text);
+}
+
+.boxFour {
+    grid-column: 4;
+    width: 400px;
+}
+
+.boxFive {
+    grid-column: 5;
+    opacity: 0;
+}
+
+.boxTwo, .boxThree, .boxFour {
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.boxTwo:hover, .boxThree:hover, .boxFour:hover {
     transform: scale(1.05);
     transition: .7s;
+}
+
+/*.boxThree:hover {
+    background-color: var(--blue-highlight-color);
+    color: white;
+}*/
+
+.boxLinkContainer{
+    padding-top: 10%;
+}
+
+.boxLink {
+    font-size: 45pt;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-right: 57px;
+    padding-left: 57px;
+    padding-bottom: 85px;
+}
+
+a.link, a.visited {
+    color: white;
 }
 
 /*===========================================================================
@@ -216,12 +281,14 @@ html {
         3D Animation Section
 =============================================================================*/
 
-.demoreel {
+/* -----DELETED----- */
+
+/*.demoreel {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 10px solid #4EBBFF;
-    border-top: 10px solid #4EBBFF;
+    border-bottom: 10px solid var(--blue-color);
+    border-top: 10px solid var(--blue-color);
     font-size: 15pt;
     text-align: center;
 }
@@ -229,34 +296,83 @@ html {
 video {
     margin: 20px;
     /* box-shadow: 10px 10px 20px gray; */
-} 
-
+}
+*/
 /*===========================================================================
         End of 3D Animation Section
 =============================================================================*/
-
 /*===========================================================================
         Resume Section
 =============================================================================*/
 
 .resume {
-    /* background-color: #4EBBFF; */
-    height: 1400px;
+    /* background-color: var(--blue-color); */
+    height: 980px;
     width: 100%;
     font-size: 12pt;
     padding-top: 15px;
-    border-bottom: 10px solid #4EBBFF;
+    border-bottom: 10px solid var(--blue-color);
 }
 
 .resume-body {
     margin-left: 50px;
 }
 
-.resume-header {
-    text-align: center;
-    text-decoration: bold;
-    font-size: 15pt;
+.resume-headerContainer {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
 }
+
+    .resumeBoxOne {
+        grid-column: 1;
+        opacity: 0;
+    }
+
+    .resumeBoxTwo {
+        grid-column: 2;
+    }
+
+    .resumeBoxThree {
+        grid-column: 3;
+    }
+
+    .resumeBoxFour {
+        grid-column: 4;
+    }
+
+    .resumeBoxFive {
+        grid-column: 5;
+    }
+
+    .resumeBoxSix {
+        grid-column: 6;
+    }
+
+    .resumeBoxSeven {
+        grid-column: 7;
+    }
+
+    .resumeBoxEight {
+        grid-column: 8;
+    }
+
+    .resumeBoxNine {
+        grid-column: 9;
+        opacity: 0;
+    }
+
+    .resumeBoxTwo, .resumeBoxThree, .resumeBoxFour, .resumeBoxFive, .resumeBoxSix, .resumeBoxSeven, .resumeBoxEight {
+        background-color: var(--blue-color);
+        border-radius: 6px;
+        padding-top: 4px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .resumeBoxTwo img, .resumeBoxThree img, .resumeBoxFour img, .resumeBoxFive img, .resumeBoxSix img, .resumeBoxSeven img, .resumeBoxEight img {
+        padding: 5px;
+    }
 
 .resume-subheader {
     font-size: 18pt;
@@ -279,7 +395,11 @@ video {
         Contact Section
 =============================================================================*/
 
-.contact{
+.contact {
+    border-top: 10px solid var(--blue-color);
+}
+
+.contactBody {
     font-size: 15pt;
     margin: 40px;
 }
@@ -292,7 +412,7 @@ video {
     font-size: 24pt;
     border-radius: 7px;
     cursor: pointer;
-    background-color: lightgray;
+    background-color: var(--bg-color);
     color: black;
 }
 
@@ -367,7 +487,7 @@ input[type=submit] {
 .footer {
     font-size: large;
     padding: 10px;
-    background-color: #4EBBFF;
+    background-color: var(--blue-color);
 }
 
 /*===========================================================================
