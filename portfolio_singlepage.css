@@ -1,0 +1,502 @@
+/*===========================================================================
+        Home Section
+=============================================================================*/
+:root { /* Text palette */
+    --header-text: Verdana;
+    --body-text: sans-serif;
+    --bg-color: E9E9E9;
+    --blue-color: #4EBBFF;
+    --blue-highlight-color: #7BCCFF;
+    --darker-blue-color: #0079C4;
+}
+
+body {
+    margin: 0%;
+    background-color: var(--bg-color);
+    font-family: var(--body-text);
+}
+
+.header {
+    font-family: var(--header-text);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--darker-blue-color);
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    font-family: var(--header-text);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    font-size: 20pt;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.link {
+    background-color: var(--darker-blue-color);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    font-family: var(--header-text);
+}
+
+.link:hover {
+    background-color: var(--blue-color);
+}
+
+/*===========================================================================
+        End of Home Section
+=============================================================================*/
+
+/*===========================================================================
+        About Me Section
+=============================================================================*/
+
+/*.mainHeader {
+    background-color: var(--bg-color);
+    text-align: center;
+    border-bottom: 10px solid var(--blue-color);
+    font-family: var(--header-text);
+}*/
+
+.Row {
+    display: block;
+    height: 600px;
+    border-top: 10px solid var(--blue-color);
+    margin-top: 16px;
+}
+
+.synopsis_column_1 {
+    float: left;
+    background-color: var(--blue-color);
+    height: 100%;
+    width: 50%;
+}
+
+.profile_image {
+    float: right;
+    overflow: hidden;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.synopsis_column_2 {
+    float: left;
+    background-color: var(--bg-color);
+    height: 100%;
+    width: 50%;
+}
+
+.slideshow-container {
+    height: 0px;
+    /* float: left; */
+}
+
+/*.Slides {
+    display: none;
+}*/
+
+.synopsis_text{
+    text-align: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px;
+}
+
+.bio_text{
+    position: absolute;
+    font-size: 16pt;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+/*=====SlidesShow=====*/
+
+/*.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: black;
+    opacity: .6;
+    border-radius: 5px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.active, .dot:hover {
+    background-color: var(--blue-color);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }*/
+
+/*===========================================================================
+        End of About Me Section
+=============================================================================*/
+
+/*===========================================================================
+        Content Section
+=============================================================================*/
+
+.content {
+    height: 420px;
+    width: 100%;
+    border-top: 10px solid var(--blue-color);
+    border-bottom: 10px solid var(--blue-color);
+}
+
+.content-text {
+    text-align: center;
+    font-size: 15pt;
+}
+
+.content-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.boxOne{
+    grid-column: 1;
+    opacity: 0;
+}
+
+.boxTwo {
+    grid-column: 2;
+    width: 400px;
+}
+
+.boxThree {
+    grid-column: 3;
+    background-color: var(--blue-color);
+    color: white;
+    width: 500px;
+    font-family: var(--header-text);
+}
+
+.boxFour {
+    grid-column: 4;
+    width: 400px;
+}
+
+.boxFive {
+    grid-column: 5;
+    opacity: 0;
+}
+
+.boxTwo, .boxThree, .boxFour {
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.boxTwo:hover, .boxThree:hover, .boxFour:hover {
+    transform: scale(1.05);
+    transition: .7s;
+}
+
+/*.boxThree:hover {
+    background-color: var(--blue-highlight-color);
+    color: white;
+}*/
+
+.boxLinkContainer{
+    padding-top: 10%;
+}
+
+.boxLink {
+    font-size: 50pt;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 85px;
+    text-decoration: none;
+    color: black;
+}
+
+a.link, a.visited {
+    color: white;
+}
+
+/*===========================================================================
+        End of Github Section
+=============================================================================*/
+
+/*===========================================================================
+        3D Animation Section
+=============================================================================*/
+
+/* -----DELETED----- */
+
+/*.demoreel {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 10px solid var(--blue-color);
+    border-top: 10px solid var(--blue-color);
+    font-size: 15pt;
+    text-align: center;
+}
+
+video {
+    margin: 20px;
+    box-shadow: 10px 10px 20px gray;
+} */
+
+/*===========================================================================
+        End of 3D Animation Section
+=============================================================================*/
+/*===========================================================================
+        Resume Section
+=============================================================================*/
+
+.resume {
+    /* background-color: var(--blue-color); */
+    /* height: 980px; */
+    width: 100%;
+    font-size: 12pt;
+    padding-top: 15px;
+    /* border-bottom: 10px solid var(--blue-color); */
+}
+
+.resume-body {
+    margin-left: 50px;
+}
+
+.resume-headerContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+}
+
+    .resumeBoxOne {
+        grid-column: 1;
+        opacity: 0;
+    }
+
+    .resumeBoxTwo {
+        grid-column: 2;
+    }
+
+    .resumeBoxThree {
+        grid-column: 3;
+    }
+
+    .resumeBoxFour {
+        grid-column: 4;
+    }
+
+    .resumeBoxFive {
+        grid-column: 5;
+    }
+
+    .resumeBoxSix {
+        grid-column: 6;
+    }
+
+    .resumeBoxSeven {
+        grid-column: 7;
+    }
+
+    .resumeBoxEight {
+        grid-column: 8;
+        opacity: 0
+    }
+
+    /* .resumeBoxNine {
+        grid-column: 9;
+        opacity: 0;
+    } */
+
+    .resumeBoxTwo, .resumeBoxThree, .resumeBoxFour, .resumeBoxFive, .resumeBoxSix, .resumeBoxSeven, .resumeBoxEight {
+        background-color: var(--blue-color);
+        border-radius: 6px;
+        padding: 10px;
+        /* padding-top: 6px;
+        padding-bottom: 2px;
+        padding-right: 10px;
+        padding-left: 10px; */
+        max-width: 180px;
+    }
+
+    .resumeBoxTwo img, .resumeBoxThree img, .resumeBoxFour img, .resumeBoxFive img, .resumeBoxSix img, .resumeBoxSeven img{
+        padding: 5px;
+    }
+
+.resume-subheader {
+    font-size: 18pt;
+}
+
+.resume-text {
+    font-size: 18pt;
+    padding-left: 20px;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+/*===========================================================================
+        End of Resume Section
+=============================================================================*/
+
+/*===========================================================================
+        Contact Section
+=============================================================================*/
+
+.contact {
+    border-top: 10px solid var(--blue-color);
+}
+
+.contactBody {
+    font-size: 15pt;
+    margin: 40px;
+}
+
+/* .open-button {
+    border: 3px solid black;
+    padding:5px;
+    font: Arial;
+    margin: 20px;
+    font-size: 24pt;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: black;
+}
+
+.contact-section {
+    margin: 40px;
+    content: "";
+}
+
+.contactForm {
+    border: 3px solid #5A5A5A;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    bottom: 100px;
+    right: 150px;
+    z-index: 9;
+    background-color: #9B9B9B;
+    padding: 15px;
+}
+
+.form-container {
+    background-color: #C3C3C3;
+    border-radius: 5px; 
+    padding: 20px;
+}
+
+.form-container .btn {
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 18pt;
+    padding : 8px;
+    color: white;
+    font: Arial;
+}
+
+.form-container .btn-cancel {
+    background-color: red;
+    border-radius: 5px;
+    font-size: 18pt;
+    padding : 8px;
+    color: white;
+    font: Arial;
+}
+
+label {
+    font-size: x-large;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+} */
+
+/*===========================================================================
+        End of Contact Section
+=============================================================================*/
+
+/*===========================================================================
+        Footer Section
+=============================================================================*/
+
+.footer {
+    font-size: large;
+    padding: 10px;
+    background-color: var(--blue-color);
+}
+
+/*===========================================================================
+        End of Footer Section
+=============================================================================*/
