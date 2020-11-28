@@ -366,7 +366,7 @@ video {
         opacity: 0;
     } */
 
-    .resumeBoxTwo, .resumeBoxThree, .resumeBoxFour, .resumeBoxFive, .resumeBoxSix, .resumeBoxSeven, .resumeBoxEight {
+    .resumeBoxTwo, .resumeBoxThree, .resumeBoxFour, .resumeBoxFive, .resumeBoxSix, .resumeBoxSeven {
         background-color: var(--blue-color);
         border-radius: 6px;
         padding: 10px;
