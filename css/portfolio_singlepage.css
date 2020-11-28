@@ -244,6 +244,7 @@ html {
 .boxTwo, .boxThree, .boxFour {
     border: 2px solid black;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .boxTwo:hover, .boxThree:hover, .boxFour:hover {
@@ -261,12 +262,14 @@ html {
 }
 
 .boxLink {
-    font-size: 45pt;
+    font-size: 50pt;
     font-weight: bold;
     padding-top: 50px;
-    padding-right: 57px;
-    padding-left: 57px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 85px;
+    text-decoration: none;
+    color: black;
 }
 
 a.link, a.visited {
@@ -295,9 +298,9 @@ a.link, a.visited {
 
 video {
     margin: 20px;
-    /* box-shadow: 10px 10px 20px gray; */
-}
-*/
+    box-shadow: 10px 10px 20px gray;
+} */
+
 /*===========================================================================
         End of 3D Animation Section
 =============================================================================*/
@@ -307,11 +310,11 @@ video {
 
 .resume {
     /* background-color: var(--blue-color); */
-    height: 980px;
+    /* height: 980px; */
     width: 100%;
     font-size: 12pt;
     padding-top: 15px;
-    border-bottom: 10px solid var(--blue-color);
+    /* border-bottom: 10px solid var(--blue-color); */
 }
 
 .resume-body {
@@ -320,7 +323,7 @@ video {
 
 .resume-headerContainer {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
 }
 
@@ -355,12 +358,13 @@ video {
 
     .resumeBoxEight {
         grid-column: 8;
+        opacity: 0
     }
 
-    .resumeBoxNine {
+    /* .resumeBoxNine {
         grid-column: 9;
         opacity: 0;
-    }
+    } */
 
     .resumeBoxTwo, .resumeBoxThree, .resumeBoxFour, .resumeBoxFive, .resumeBoxSix, .resumeBoxSeven, .resumeBoxEight {
         background-color: var(--blue-color);
@@ -370,9 +374,10 @@ video {
         padding-bottom: 2px;
         padding-right: 10px;
         padding-left: 10px; */
+        max-width: 180px;
     }
 
-    .resumeBoxTwo img, .resumeBoxThree img, .resumeBoxFour img, .resumeBoxFive img, .resumeBoxSix img, .resumeBoxSeven img, .resumeBoxEight img {
+    .resumeBoxTwo img, .resumeBoxThree img, .resumeBoxFour img, .resumeBoxFive img, .resumeBoxSix img, .resumeBoxSeven img{
         padding: 5px;
     }
 
